@@ -1,0 +1,8 @@
+header {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    max-width: 1240px;
+    min-width: 320px;
+    padding: 10px;
+}
