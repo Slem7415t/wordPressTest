@@ -3,6 +3,12 @@
   add_action('wp_enqueue_scripts', 'add_scripts_and_styles');
   // Добавляем кастомный логотип в настройки админки
   add_theme_support('custom-logo');
+  // Добавляем действие для подключения меню
+  add_action( 'after_setup_theme','main_menu' );
+  // Добавляем выбор изображения к записи в админку
+  add_theme_support('post-thumbnails', array('post'));
+  // Регистрация миниатюры изображения
+  add_image_size('adv_thumbnail', 100, 100, true);
 
   // Подключаем скрипты и стили
   function add_scripts_and_styles() {
@@ -18,5 +24,11 @@
     wp_enqueue_style('header', get_template_directory_uri().'/assets/css/header.css',array('main'));
     wp_enqueue_style('footer', get_template_directory_uri().'/assets/css/footer.css',array('main'));
 
+  }
+
+  // Регистрируем меню
+  function main_menu() {
+    register_nav_menu( 'top','Меню в шапке' );
+    register_nav_menu( 'bottom','Меню в подвале' );
   }
 ?>

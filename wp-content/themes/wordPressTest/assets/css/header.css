@@ -5,4 +5,5 @@ header {
     max-width: 1240px;
     min-width: 320px;
     padding: 10px;
+    margin: 0 auto;
 }
