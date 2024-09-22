@@ -2,6 +2,7 @@ footer {
     width: 100%;
     max-width: 1240px;
     min-width: 320px;
-    margin: auto 0 0;
+    margin: auto auto 0;
     padding: 10px;
+    border-top: solid 1px black;
 }

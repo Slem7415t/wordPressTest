@@ -38,7 +38,7 @@ body {
 	align-items: center;
     min-height: 100vh;
     background-repeat: no-repeat;
-    background-position: right 40px top 40px;
+    background-position: right 40px top 120px;
 }
 
 main {
@@ -46,6 +46,7 @@ main {
     flex-direction: column;
     width: 100%;
     gap: 10px;
+	flex-grow: 1;
 }
 
 .container {
@@ -53,11 +54,4 @@ main {
     min-width: 320px;
     margin: 0 auto;
     padding: 10px;
-}
-
-/* ЛОГОТИП */
-.custom-logo {
-    max-width: 55px;
-    max-height: 55px;
-    margin: 0 16px;
 }

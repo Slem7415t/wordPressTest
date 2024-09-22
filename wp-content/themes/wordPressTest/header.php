@@ -30,13 +30,15 @@
     foreach($settings as $post) {
         setup_postdata($post);
     ?>
-        <div class="" style="width: 100%; background-color:<?= CFS()->get('category-color') ?>">
+        <div class="" style="width: 100%; background-color:<?= CFS()->get('category-color') ?>"><!--открывает настройки вставку-->
     <?php
     }
     wp_reset_postdata();
     ?>
     <header>
+        <!--логотип-->
         <?php the_custom_logo(); ?>
+        <!--меню-->
         <?php wp_nav_menu( [
             'theme_location'  =>'top',
             'container'       =>'',
@@ -44,3 +46,4 @@
             'menu_id'         =>'',
         ] ); ?>
     </header>
+        </div><!--закрывает настройки вставку-->

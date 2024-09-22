@@ -6,4 +6,12 @@ header {
     min-width: 320px;
     padding: 10px;
     margin: 0 auto;
+    border-bottom: solid 1px black;
+}
+
+/* ЛОГОТИП */
+.custom-logo {
+    max-width: 55px;
+    max-height: 55px;
+    margin: 0 16px;
 }
