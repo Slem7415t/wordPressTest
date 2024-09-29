@@ -145,7 +145,6 @@ _deprecated_file(
 				</ul>
 				</li>
 			<?php } ?>
-
 			<?php endif; /* ! dynamic_sidebar() */ ?>
 		</ul>
 	</div>
